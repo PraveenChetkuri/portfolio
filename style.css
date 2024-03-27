@@ -1,0 +1,269 @@
+.intro {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: 50vh;
+  background-color: #6499E9;
+  font-family: "VT323", monospace;
+  font-size: 2rem;
+  font-weight: 400px;
+  color: white;
+  margin-bottom: 20px;
+}
+span {
+  color: #002D62;
+}
+/*intro*/
+.hello, .skills, .projects, .extra, .contact, footer {
+  font-family: "Syne Mono", monospace;
+    font-weight: 400;
+    font-style: normal;
+    background-color: #FFFFFF;
+}
+
+.hello {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 40px;
+  height: 40vh;
+}
+
+.hello p, .skills p {
+  text-align: center;
+  max-width: 50%;
+}
+
+.hello img {
+  border-radius: 50%;
+  border: solid #6499E9 5px;
+}
+/*hello*/
+.skills h1{
+  text-align: center;
+}
+.skills {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 40px;
+  height: 30vh;
+}
+/*skills*/
+.projects h1 {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.image {
+  height: 200px;
+  float: left;
+  margin-right: 50px;
+}
+/* 
+.item {
+  width: 45%;
+} */
+
+/* .left {
+  float: left;
+}
+
+.right {
+  float: right;
+} */
+
+.projects {
+  /* height: 40vh;
+  margin-top: 100px; */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 40px;
+  /* height: 100vh; */
+}
+.projects .left .image {
+  height: 12vh;
+  margin-bottom: 50px;
+}
+/*projects*/
+.extra h1{
+  text-align: center;
+}
+
+.extra {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 40px;
+  /* height: 50vh; */
+}
+/*extra*/
+.contact {
+  /* background-color: cornsilk; */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 30vh;
+  /* width: 100%; */
+}
+.contact p {
+  max-width: 80%; /* Limit the maximum width to improve readability */
+  margin: 0 auto; /* Center the paragraph within the section */
+  padding: 0 15px; /* Add some padding for smaller screens */
+  box-sizing: border-box; /* Include padding in the element's total width and height */
+}
+
+footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #002D62;
+  color: white;
+  text-align: center;
+  height: 20vh;
+  margin-top: 30px;
+}
+a {
+  color: white;
+  text-decoration: none;
+  margin-bottom: 16px;
+}
+a:hover {
+  color: black;
+}
+hr {
+  border: dotted rgb(204, 203, 203) 6px;
+    border-bottom: none;
+    width: 5%;
+      margin: 20px auto; /* Center the hr element and add vertical spacing */
+}
+
+button {
+  background-color: #6499E9;
+  color: black;
+  width: 150px;
+  height: 50px;
+  border-radius: 10px;
+  font-size: 24px;
+  font-weight: 400;
+  margin-top: 20px;
+}
+
+/* Laptops and above (770px and wider) */
+@media (min-width: 770px) {
+  .hello p, .skills p {
+    max-width: 70%; /* Optimized text width for better readability on larger screens */
+  }
+
+  .item {
+    width: 50%; /* Adjust the width of project items for a better layout */
+    float: none; /* Avoid floating to keep the structure consistent */
+    margin: 0 auto; /* Center the items within their container */
+  }
+
+  .image {
+    width: auto; /* Revert any specific width adjustments to auto */
+    height: 200px; /* Maintain a consistent height for images */
+    margin-right: 20px; /* Ensure some space between the image and text */
+  }
+
+  .hello img, .projects .image {
+    width: 200px; /* Standardize image width for a consistent look */
+    height: auto; /* Adjust height automatically to maintain aspect ratio */
+  }
+  
+  .hello, .skills, .projects, .extra, .contact, footer {
+    height: auto; /* Remove fixed heights to allow content to determine height */
+    margin-bottom: 40px; /* Ensure adequate spacing between sections for easy navigation */
+  }
+  .contact p {
+    max-width: 90%; /* Allow the paragraph to occupy more space on smaller screens */
+    padding: 0 10px; /* Adjust padding for very small screens */
+  }
+}
+
+/* Tablets (426px to 768px) */
+@media (min-width: 426px) and (max-width: 768px) {
+  .hello, .skills, .projects, .extra, .contact, footer {
+    padding: 0 20px; /* Add padding for better spacing */
+  }
+
+  .hello p, .skills p, .projects .item p {
+    max-width: 75%; /* Increase text width for better readability */
+  }
+
+  .hello img, .image {
+    width: 100px; /* Reduce image size */
+    height: 100px; /* Maintain aspect ratio */
+  }
+
+  .item, .left, .right {
+    width: 100%; /* Stack items vertically */
+    float: none;
+    margin: 0 auto; /* Center items */
+  }
+}
+
+/* Large Mobiles (326px to 425px) */
+@media (max-width: 425px) {
+  .hello, .skills, .projects, .extra, .contact, footer {
+    padding: 0 15px; /* Adjust padding for screen size */
+  }
+
+  .hello p, .skills p, .projects .item p {
+    max-width: 85%; /* Adjust text width for narrower screens */
+  }
+
+  .hello img, .image {
+    width: 80px; /* Further reduce image size */
+    height: 80px;
+  }
+
+  .item, .left, .right {
+    width: 100%; /* Ensure items stack vertically */
+  }
+  .contact p {
+    max-width: 95%; /* Further increase the width for small devices */
+    padding: 0 5px; /* Minimal padding on the smallest screens */
+  }
+}
+
+/* Medium Mobiles (321px to 375px) */
+@media (max-width: 375px) {
+  .hello, .skills, .projects, .extra, .contact, footer {
+    padding: 0 10px; /* Narrower padding for smaller screens */
+  }
+
+  .hello p, .skills p, .projects .item p {
+    max-width: 90%; /* Maximize text width for readability */
+  }
+
+  .hello img, .image {
+    width: 70px; /* Adjust image size for medium mobiles */
+    height: 70px;
+  }
+}
+
+/* Small Mobiles (320px and below) */
+@media (max-width: 320px) {
+  .hello, .skills, .projects, .extra, .contact, footer {
+    padding: 0 5px; /* Minimal padding for very small screens */
+  }
+
+  .hello p, .skills p, .projects .item p {
+    max-width: 100%; /* Utilize full width for text */
+  }
+
+  .hello img, .image {
+    width: 60px; /* Smallest size for images */
+    height: 60px;
+  }
+}
