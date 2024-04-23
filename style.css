@@ -87,7 +87,14 @@ span {
   /* height: 100vh; */
 }
 .projects .left .image {
-  height: 12vh;
+  height: 25vh;
+  width: 20vw;
+  margin-bottom: 50px;
+}
+
+.projects .right .image {
+  height: 25vh;
+  width: 20vw;
   margin-bottom: 50px;
 }
 /*projects*/
