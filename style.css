@@ -191,6 +191,10 @@ button {
     height: auto; /* Remove fixed heights to allow content to determine height */
     margin-bottom: 40px; /* Ensure adequate spacing between sections for easy navigation */
   }
+
+  footer {
+    margin-bottom: 0;
+  }
   .contact p {
     max-width: 90%; /* Allow the paragraph to occupy more space on smaller screens */
     padding: 0 10px; /* Adjust padding for very small screens */
